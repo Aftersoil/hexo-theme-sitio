@@ -6,41 +6,33 @@
 [![Github Forks](https://img.shields.io/github/forks/Aftersoil/hexo-theme-sitio)](https://github.com/Aftersoil/hexo-theme-sitio/network/members)
 [![Github Star](https://img.shields.io/github/stars/Aftersoil/hexo-theme-sitio)](https://github.com/Aftersoil/hexo-theme-sitio/stargazers)
 
-【 [English description](README_EN.md) | [部署演示](https://sitio.aftersoil.xyz/) 】
+【 [English description](https://wiki.aftersoil.xyz/sitio/) | [Sitio 使用指南](https://wiki.aftersoil.xyz/sitio/) 】
 
+> This is an elegant theme based on [hexo](https://hexo.io/).
 
-> 这是一款基于 <a href="https://hexo.io/" target="_blank">hexo</a> 开发的一款优雅的主题。
+## Functional characteristics
 
-## 功能特性
+### completed
 
-### 已完成
+- [x]  Progressively enhance web application pwa.
+- [x]  Responsive design, adapt to various terminals.
 
-- [x]  渐进式增强WEB应用，pwa。
-- [x]  响应式设计，适配多种终端。
-
-### 未完成
-- [ ] 图片懒加载
-- [ ] 内置多语言
-- [ ] 支持多款评论插件
-- [ ] 内置文章搜索
-- [ ] 自定义静态资源 CDN
-- [ ] 文章版权信息
-- [ ] 自定义代码高亮方案
-- [ ] 打赏功能
-- [ ] 页脚备案信息
-- [ ] 网页访问统计
-- [ ] 无比详实的[用户文档]()
-- [ ] 支持脚注语法
-- [ ] 音乐播放器
-- [ ] live2d 看板娘
-- [ ] 暗色模式
-
-
-
-## 如何使用
-
-待开发中...
+### undone
+- [ ] The image is loaded lazily.
+- [ ] Built-in multiple languages.
+- [ ] Support multiple comment plugins.
+- [ ] Built-in article search.
+- [ ] Article copyright information
+- [ ] Custom code highlighting scheme.
+- [ ] Reward function.
+- [ ] Footer filing information.
+- [ ] Webpage visit statistics.
+- [ ] Very detailed user [documentation]().
+- [ ] Support footnote syntax.
+- [ ] music player.
+- [ ] ive2d Kanban girl.
+- [ ] Dark mode.
 
 ## 反馈
 
-在使用该主题过程中，如果遇到问题，请仔细阅读使用文档，或者给作者提 [issue](https://github.com/Aftersoil/hexo-theme-sitio/issues/new)。期待您的合作！！！💪💪💪
+In the process of using this theme, if you encounter problems, please read the usage document carefully, or raise an [issue](https://github.com/Aftersoil/hexo-theme-sitio/issues/new/choose) to the author. Looking forward to your cooperation! ! ! 💪💪💪

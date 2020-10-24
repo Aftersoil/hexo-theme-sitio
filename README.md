@@ -6,8 +6,7 @@
 [![Github Forks](https://img.shields.io/github/forks/Aftersoil/hexo-theme-sitio)](https://github.com/Aftersoil/hexo-theme-sitio/network/members)
 [![Github Star](https://img.shields.io/github/stars/Aftersoil/hexo-theme-sitio)](https://github.com/Aftersoil/hexo-theme-sitio/stargazers)
 
-【 [English description](README_EN.md) | [部署演示](https://sitio.aftersoil.xyz/) 】
-
+【 [English description](https://wiki.aftersoil.xyz/zh/sitio/) | [Sitio 使用指南](https://wiki.aftersoil.xyz/zh/sitio/) 】
 
 > 这是一款基于 <a href="https://hexo.io/" target="_blank">hexo</a> 开发的一款优雅的主题。
 
@@ -35,12 +34,6 @@
 - [ ] live2d 看板娘
 - [ ] 暗色模式
 
-
-
-## 如何使用
-
-待开发中...
-
 ## 反馈
 
-在使用该主题过程中，如果遇到问题，请仔细阅读使用文档，或者给作者提 [issue](https://github.com/Aftersoil/hexo-theme-sitio/issues/new)。期待您的合作！！！💪💪💪
+在使用该主题过程中，如果遇到问题，请仔细阅读使用文档，或者给作者提 [issue](https://github.com/Aftersoil/hexo-theme-sitio/issues/new/choose)。期待您的合作！！！💪💪💪
