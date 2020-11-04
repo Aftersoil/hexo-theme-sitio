@@ -1,0 +1,27 @@
+// Function method to encapsulate compatible and repetitive styles
+
+// Border rounded corners
+fillet($num) {
+  compatible(border-radius, $num)
+  animation
+}
+
+
+// Prohibit left-click selection
+select($attributes) {
+  compatible(user-select, attributes)
+}
+
+// animation frame animation 
+animated($second, value...) {
+  compatible(animation, $second, value)
+}
+
+// compatible
+compatible(property, value...) {
+  -webkit-{property} value
+  -moz-{property} value
+  -o-{property} value
+  -ms-{property} value
+  {property} value
+}

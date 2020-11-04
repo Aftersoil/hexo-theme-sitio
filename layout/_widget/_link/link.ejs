@@ -1,0 +1,11 @@
+<% if(theme.head.narmal) { %>
+  <link rel="shortcut icon" href="<%= theme.head.narmal %>" type="image/x-icon">
+<% } %>
+
+<% if(theme.head.manifest) { %>
+  <link rel="manifest" href="<%= theme.head.manifest %>">
+<% } %>
+
+<!-- css main start -->
+<link rel="stylesheet" href="<%= url_for(theme.css) %>/main.css?v=<%= theme.version %>">
+<!-- css main end -->

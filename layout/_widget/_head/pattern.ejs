@@ -1,0 +1,33 @@
+<% if(theme.head.author) { %>
+  <meta name="author" content="<%= theme.head.author %>">
+<% } else { %>
+  <meta name="author" content="<%= config.author %>">
+<% } %>
+
+<!-- google baidu bing yandex qihu start -->
+<% if(theme.Included.google_site_verification) { %> 
+  <meta name="google-site-verification" content="<%- url_for(theme.Included.google_site_verification) %>">
+<%} %> 
+
+<% if(theme.Included.baidu_site_verification) { %> 
+  <meta name="manifest" content="<%- url_for(theme.Included.baidu_site_verification) %>">
+<%} %> 
+
+<% if(theme.Included.bing_site_verification) { %> 
+  <meta name="bing-site-verification" content="<%- url_for(theme.Included.bing_site_verification) %>">
+<%} %> 
+
+<% if(theme.Included.yandex_site_verification) { %> 
+  <meta name="yandex-site-verification" content="<%- url_for(theme.Included.yandex_site_verification) %>">
+<%} %> 
+
+<% if(theme.Included.qihu_site_verification) { %> 
+  <meta name="qihu-site-verification" content="<%- url_for(theme.Included.qihu_site_verification) %>">
+<%} %> 
+<!-- google baidu bing yandex qihu end -->
+
+<!-- pwa manifest start -->
+<% if(theme.head.android_manifest) { %> 
+  <link rel="manifest" href="<%- url_for(theme.head.android_manifest) %>">
+<%} %> 
+<!-- pwa manifest end -->

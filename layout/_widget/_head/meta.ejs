@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="google" content="notranslate">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<% if(theme.head.theme_color) { %>
+  <meta name="theme-color" content="<%= theme.head.theme_color %>">
+<% } %>
+
+<% if(theme.head.keywords || theme.head.description) { %>
+  <meta name="keywords" content="<%= theme.head.keywords %>">
+  <meta name="Description" content="<%= theme.head.description %>">
+<% } else { %> 
+  <meta name="keywords" content="<%= config.keywords %>">
+  <meta name="Description" content="<%= config.description %>">
+<% } %>

@@ -1,13 +1,31 @@
 <!DOCTYPE html>
-<html lang="<%= config.language %>">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-</head>
-<body>
+<html class="theme-sitio" lang="<%= config.language %>" data-theme="light">
 
+<%- partial('./_widget/_head/head.ejs') %>
+
+<body itemscope="<%= theme.itemscope %>" itemtype="<%= theme.itemtype %>" lang="<%= config.language %>"></body>
+
+<!-- mobile start -->
+<div class="mobile-terminal">
+  <%- partial('./_partial/mobile.ejs') %> 
+</div>
+<!-- mobile end -->
+
+<div class="wrapper">
+  <%- partial('./_partial/_header/header.ejs') %>
   <%- body %>
+  <%- partial('./_partial/_footer/footer.ejs') %>
+</div>
+
+<!-- Customize right click start -->
+<!-- Customize right click end -->
+
+<script src="<%= url_for('js/sitio.min.js') %>?v=<%= theme.version %>"></script>
+
+<!-- pwa -->
+<% if(theme.head.manifest) { %>
+  <%- partial('./_widget/_script/pwa.ejs') %> 
+<% } %> 
 
 </body>
 </html>
