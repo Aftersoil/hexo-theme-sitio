@@ -1,7 +1,9 @@
-<% if(theme.theme.concise) { %>
-  <footer>简洁版</footer>
-<% } else if (theme.theme.pretty) { %>
-  <footer>漂亮的</footer>
-<% } else if(theme.theme.customize) { %>
-  <footer>自定义导航</footer>
-<% } %>
+<footer class="footer">
+  <% if(theme.theme.concise || theme.footer.enable) { %>
+    <%- partial('./_concise/concise.ejs') %>
+  <% } else if (theme.theme.pretty || theme.footer.enable) { %>
+    <%- partial('./_pretty/pretty.ejs') %>
+  <% } else if(theme.theme.customize || theme.footer.enable) { %>
+    <%- partial('./_customize/customize.ejs') %>
+  <% } %>
+</footer>

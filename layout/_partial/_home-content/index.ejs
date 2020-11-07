@@ -1,0 +1,11 @@
+<aside class="page-content"
+  <%- theme.concise_sidebar.flex_direction != true ? 'style="flex-direction: unset;"' : 'style="flex-direction: row-reverse;"' %>
+>
+  <% if(theme.theme.concise || theme.concise_sidebar.enable) { %>
+    <%- partial('./_concise/concise.ejs') %>
+  <% } else if (theme.theme.pretty || theme.concise_sidebar.enable) { %>
+    <%- partial('./_pretty/pretty.ejs') %>
+  <% } else if(theme.theme.customize || theme.concise_sidebar.enable) { %>
+    <%- partial('./_customize/customize.ejs') %>
+  <% } %>
+</aside>

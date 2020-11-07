@@ -1,1 +1,10 @@
-
+<div class="concise-navbar">
+  <% if(theme.concise_navbar.title) { %>
+    <div class="blog-name">
+      <%- partial('./title.ejs') %>
+    </div>
+  <% } %> 
+  <div class="menus <%= theme.concise_navbar.title === false ? 'disabled' : null %>">
+    <%- partial('./menus.ejs') %>
+  </div>
+</div>

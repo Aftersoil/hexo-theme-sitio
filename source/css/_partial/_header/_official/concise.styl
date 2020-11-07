@@ -1,1 +1,45 @@
+.concise-navbar {
+  height 60px
+  display flex
+  align-items center
+  padding-left $padding + 26
+  padding-right $padding + 26
+  background-color var(--sitio-card-bg)
+  transition(all, $theme-switching)
 
+  // title
+  .blog-name {
+    flex 1
+  }
+  
+  .navbar-brand {
+    text-shadow 0.1rem 0.1rem 0.2rem rgba(0,0,0,.15)
+    font-weight 700
+    font-size 20px
+    color var(--sitio-font-color)
+    cursor pointer
+  }
+
+  // menus
+  .menus {
+
+    .menus-list {
+      display flex
+    }
+
+    .menus-items {
+      padding 0 8px
+    }
+
+    a {
+      font-weight 600
+      text-shadow 0.05rem 0.05rem 0.1rem rgba(0,0,0,.3)
+      color var(--sitio-font-color)
+    }
+  }
+
+  &:not(.disabled) {
+    justify-content center
+  }
+
+}

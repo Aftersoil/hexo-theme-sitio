@@ -1,5 +1,5 @@
 <% if(theme.head.narmal) { %>
-  <link rel="shortcut icon" href="<%= theme.head.narmal %>" type="image/x-icon">
+  <link rel="shortcut icon" href="<%= theme.head.narmal %>?v=<%= theme.version %>" type="image/x-icon">
 <% } %>
 
 <% if(theme.head.manifest) { %>
@@ -9,3 +9,16 @@
 <!-- css main start -->
 <link rel="stylesheet" href="<%= url_for(theme.css) %>/main.css?v=<%= theme.version %>">
 <!-- css main end -->
+
+<!-- Third-party style start -->
+<link rel="stylesheet" href="<%= url_for(theme.CDN.font_awesome) %>">
+
+<% if (theme.pace_theme) { %>
+  <% for (var i = 0; i < theme.pace_theme.length; i++) { %>
+    <% if(theme.pace_theme[i]) { %>
+      <link rel="stylesheet" href="<%= url_for(theme.pace_theme[i]) %>">
+    <% } %>
+  <% } %>
+<%}  %>
+
+<!-- Third-party style end -->

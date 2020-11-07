@@ -1,0 +1,20 @@
+<section class="card-info">
+  <div class="info-photo-text text-center">
+    <img src="/images/chrome-pwa-icon/chrome-192x192.png" alt="" class="head-pic">
+    <div class="info-text">
+      <h3><%= config.title || theme.head.title %></h3>
+
+      <% if(theme.about.description) { %>
+        <p><%= theme.about.description %></p>
+      <% } %>
+
+    </div>
+  </div>
+  
+  <% if(theme.about.attention && theme.about.Github) { %>
+    <div class="profile-about text-center">
+      <a href="<%= url_for(theme.about.Github) %>"><%- theme.about.attention %></a>
+    </div>
+  <% } %>
+
+</section>

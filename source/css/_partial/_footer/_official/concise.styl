@@ -1,1 +1,23 @@
+.footer {
+  text-align center
+}
 
+.concise-footer {
+  padding-top $padding + 10
+  padding-bottom $padding + 10
+  background-color var(--sitio-card-bg)
+  color var(--sitio-font-color)
+  transition(all, $theme-switching)
+
+  .footer-info, .footer-time {
+    display flex
+    justify-content center
+    margin-top 5px
+    margin-bottom 10px
+  }
+
+  .footer-time {
+    margin-top 10px
+    margin-bottom 0
+  }
+}

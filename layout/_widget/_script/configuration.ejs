@@ -2,5 +2,9 @@
 <script type="text/javascript" id="hexo.configurations">
   var Sitio = window.Sitio || {};
   Sitio = {
+    font_family: '<%= theme.body.font_family !== undefined ? true : false %>',
+    version: '<%= theme.version %>'
   }
+
+  console.log(Sitio)
 </script>

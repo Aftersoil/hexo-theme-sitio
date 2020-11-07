@@ -1,1 +1,26 @@
+<div class="concise-footer">
+  <div class="footer-time">
+    <span><%- theme.footer.name %></span>
+    <% if(theme.footer.since) { %>
+      <p>2462天4小时22分37秒(●'◡'●)ﾉ♥</p>
+    <% } %>
+  </div>
+  <div class="footer-info">
+    <p>© 2020 Hi, <span><%= config.title || theme.head.title %></span>.</p>
 
+    <% if(theme.footer.hexo) { %>
+      <p>由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动.</p>
+    <% } %>
+    
+    <p>Theme By <a href="https://sitio.aftersoil.xyz/">Sitio</a> <span>v<%= theme.version %>.</span></p> 
+
+    <% if(theme.footer.site_map != undefined) { %>
+      <p><a href="<% url_for(theme.footer.site_map) %>">站点地图.</p> 
+    <% } %>
+    
+    <% if(theme.footer.record != undefined) { %>
+      <p><%= theme.footer.record %>.</p>
+    <% } %>
+
+  </div>
+</div>

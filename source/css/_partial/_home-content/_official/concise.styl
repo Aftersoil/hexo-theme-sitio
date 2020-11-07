@@ -1,0 +1,93 @@
+.page-content {
+  max-width 1200px
+  display flex
+  color var(--sitio-font-color)
+  margin 0 auto
+  padding-left $padding + 5
+  padding-right $padding + 5
+  padding-top $padding + 20
+  padding-bottom $padding + 25
+
+  // 侧边栏
+  .aside-content {
+    width 25%
+    height 100%
+    padding-left $padding + 5
+
+    .head-pic {
+      width 110px
+      height 110px
+    }
+
+    .info-text {
+
+      h3 {
+        font-size: 24px
+        padding-bottom $padding - 5
+      }
+    }
+
+    .profile-about {
+      padding-top $padding
+
+      a {
+        display block
+        width 100%
+        line-height 2.4
+        background-color var(--sitio-basic-color)
+        color #fff
+        transition(all, .27s)
+
+        &:hover {
+          background-color var(--sitio-font-hover)
+          opacity .8
+        }
+      }
+    }
+
+    section {
+      margin $aside-section-margin 0
+    }
+
+    section:first-child {
+      margin 0
+    }
+
+    section:last-child {
+      margin-bottom 0
+    }
+
+    .more-links {
+      // padding 0
+
+      h3 {
+        // padding 12px 20px 0px 20px
+        padding-bottom $padding
+      }
+    }
+
+    .list-group-item {
+      display block
+      color var(--sitio-font-color)
+      padding ($padding - 2) ($padding)
+      fillet(2px)
+      
+      span {
+        padding-left $padding - 6
+      }
+
+      &:hover {
+        background-color var(--sitio-font-hover)
+        // color #fff
+        text-indent 4px
+      }
+
+    }
+
+    .list-group-item + .list-group-item {
+      // border-top: 1px solid rgba(0,0,0,.125)
+    }
+
+  }
+  
+}

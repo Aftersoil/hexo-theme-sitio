@@ -1,0 +1,24 @@
+<section class="more-links">
+  <h3>有关<%= config.title || theme.head.title %>的更多链接</h3>
+  <div class="list-group">
+
+    <% Object.keys(theme.more_links.item).forEach(function(key) { %>
+
+      <% 
+        var arr_items = theme.more_links.item[key].split('|');
+      %>
+
+      <a 
+        href="<%- arr_items[0].trim() === '1' ? arr_items[1].trim() : "javascript:;" %>" 
+        class="list-group-item" 
+        title="<%- key %>" 
+        target="<%- arr_items[0].trim() === '1' ? "_blank" : "" %>"
+      >
+      <i class="fa <%- arr_items[2].trim() %>" aria-hidden="true"></i>
+      <span><%- key %></span>
+    </a>
+
+    <% }) %>
+
+  </div>
+</section>

@@ -17,9 +17,10 @@ override: false
 # =================================================================
 
 head: 
+  title: Sitio
   keywords: Sitio | hexo-theme-sitio | Sitio 主题
   description: Sitio是基于hexo写的一款主题，这里有最好看的主题，欢迎您的使用和我们一起来开发这款主题。
-  narmal: /icon/favicon.ico
+  narmal: /favicon.ico
   theme_color: '#fff'
   # manifest: /manifest.json
   author: aftersoil
@@ -35,7 +36,7 @@ Included:
 
 
 # 个人资料
-Profile:
+profile:
   name: 
   avatar: 
 
@@ -46,17 +47,46 @@ theme:
   pretty: false
   customize: false
 
+
+body:
+  font_family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif
+
+
+footer: 
+  enable: true
+  name: 博客已萌萌哒运行
+  since: "2020/08/20 15:35:24"
+  hexo: true
+  site_map: 
+  record: 
+
 # =================================================================
 # =================================================================
 # ===                     简洁版全局变量                         ===
 # =================================================================
 # =================================================================
+concise_navbar:
+  enable: true
+  title: true
 
+concise_menus:
 
+concise_sidebar: 
+  enable: true
+  flex_direction: true
 
+about: 
+  enable: true
+  description: "let today = new Beginning();"
+  attention: "Follow Me"
+  Github: https://github.com/Aftersoil/hexo-theme-sitio
 
-
-
+more_links: 
+  enable: true
+  item:
+    Github: 1 | https://github.com/Thomasvader | fa-github
+    Youtub: 1 | https://www.youtube.com/channel/UCdBHShpJj1ZTbJkYK02gUPg?view_as=subscriber | fa-youtube-play
+    Twitter: 1 | https://twitter.com/Thomavader | fa-twitter
 
 
 # =================================================================
@@ -77,19 +107,31 @@ theme:
 # =================================================================
 
 # 使用到的前端库，可按需替换成对应的CDN地址，如果下面未指定具体的版本号，使用最新的版本即可.
-libs:
-  css: 
-  js: 
-    jquery: /libs/jquery/jquery.min.js
+CDN: 
+  # http://www.fontawesome.com.cn/examples/
+  font_awesome: https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css
+  pace: https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js
+  jquery: https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js
+
+pace_theme: 
+  - https://cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/blue/pace-theme-minimal.min.css
+  # - https://cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/blue/pace-theme-flash.min.css
+  # - https://cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/blue/pace-theme-mac-osx.min.css
+  # - https://cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/blue/pace-theme-big-counter.min.css
+  # - https://cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/blue/pace-theme-corner-indicator.min.css
+  # - https://cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/blue/pace-theme-center-circle.min.css
+  # - https://cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/blue/pace-theme-center-atom.min.css
+  # - https://cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/blue/pace-theme-center-simple.min.css
+  # - https://cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/blue/pace-theme-loading-bar.min.css
+  # - /libs/css/pace-theme.css
 
 
 itemscope: theme
 itemtype: http://schema.org/WebPage
-
 
 # Assets
 css: css
 js: js
 images: images
 
-version: 1.0.1
+version: 1.0.0

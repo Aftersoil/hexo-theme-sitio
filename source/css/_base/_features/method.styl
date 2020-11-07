@@ -3,9 +3,12 @@
 // Border rounded corners
 fillet($num) {
   compatible(border-radius, $num)
-  animation
 }
 
+// transition
+transition($attributes, $seconds, value...) {
+  compatible(transition, $attributes, $seconds, value)
+}
 
 // Prohibit left-click selection
 select($attributes) {
